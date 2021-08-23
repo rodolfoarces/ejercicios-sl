@@ -3,13 +3,13 @@ Informe con datos de cajas (B-1, 1.1)
 
 Entorno:
 	W_ID_ANTERIOR 	es numerico
+	W_DIAGONAL		es numerico
     archivo CAJAS
         registro REG_CAJA
             ID          es numerico
             ALTO        es numerico
             ANCHO       es numerico
             LARGO       es numerico
-            DIAGONAL    es numerico
         fin_registro
     prefijo CAJA
 
@@ -25,6 +25,7 @@ fin
 Rutinas:
 PROCESO_INICIAL:
     ejecutar IMPRIMIR_PANTALLA_INICIAL
+    ejecutar ABRIR_ARCHIVO_CAJAS
     ejecutar LEER_SIG_ID
 retorno
 
@@ -57,15 +58,13 @@ LEER_SIG_ID:
 retorno
 
 CALCULAR_DIMENSIONES:
-	/* Funcion sqrt() es la raiz segun documentacion SL (libro-sl.pdf Pag 35) */
-	
-	CAJA_DIAGONAL = sqrt(CAJA_ALTO^2 + CAJA_ANCHO^2 + CAJA_LARGO^2)
+	W_DIAGONAL = (CAJA_ALTO^2 + CAJA_ANCHO^2 + CAJA_LARGO^2)^1/2
 retorno
 
 IMPRIMIR_DIMENSIONES
-	imprimir CAJA_ID, CAJA_ALTO, CAJA_ANCHO, CAJA_LARGO, CAJA_DIAGONAL
+	imprimir CAJA_ID, CAJA_ALTO, CAJA_ANCHO, CAJA_LARGO, W_DIAGONAL
 retorno
 
 CERRAR_ARCHIVO_CAJAS
-	cerrar CAJAS
+    cerrar CAJAS
 retorno
