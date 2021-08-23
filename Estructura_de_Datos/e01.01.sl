@@ -53,6 +53,7 @@ LEER_SIG_ID:
 		CAJA_ID = 0
 	sino
 		leer REG_CAJA
+    fin_si
 retorno
 
 CALCULAR_DIMENSIONES:
