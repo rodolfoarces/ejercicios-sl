@@ -8,7 +8,7 @@ Entorno:
 	W_INDICE		es numerico
 	archivo CAJAS
 		registro REG_CAJA
-			ID		es numerico
+			ID	es numerico
 			ALTO	es numerico
 			ANCHO	es numerico
 			LARGO	es numerico
@@ -71,7 +71,7 @@ retorno
 
 IMPRIMIR_DIMENSIONES
 	desde W_INDICE=1 hasta 7
-		imprimir W_TOTALES(W_INDICE)
+		imprimir VEC_TOTALES(W_INDICE)
 	fin_desde
 retorno
 
