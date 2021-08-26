@@ -8,10 +8,10 @@ Entorno:
 	W_INDICE		es numerico
 	archivo CAJAS
 		registro REG_CAJA
-			ID          es numerico
-			ALTO        es numerico
-			ANCHO       es numerico
-			LARGO       es numerico
+			ID		es numerico
+			ALTO	es numerico
+			ANCHO	es numerico
+			LARGO	es numerico
 		fin_registro
 	prefijo CAJA
 
