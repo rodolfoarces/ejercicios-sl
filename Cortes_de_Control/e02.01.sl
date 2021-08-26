@@ -1,44 +1,44 @@
 Objetivo:
-Informe con datos de cajas (B-4, 2.1)
+	Informe con datos de cajas (B-4, 2.1)
 
 Entorno:
 	W_ID_ANTERIOR 		es numerico
 	W_TOTAL_GENERAL		es numerico
 	W_TOTAL_REPUESTO	es numerico
-    archivo REPUESTO
-        registro REG_REPUESTO
-            NRO_REPUESTO	es numerico
-            DESCRIPCION		es numerico
-            PRECIO_UNIT		es numerico
-            CANT_VENDIDA	es numerico
-        fin_registro
-    prefijo REP
+	archivo REPUESTO
+		registro REG_REPUESTO
+			NRO_REPUESTO	es numerico
+			DESCRIPCION		es numerico
+			PRECIO_UNIT		es numerico
+			CANT_VENDIDA	es numerico
+		fin_registro
+	prefijo REP
 
 Cuerpo principal:
 inicio
-    ejecutar PROCESO_INICIAL
-    mientras NRO_REPUESTO <> 0
-        ejecutar PROCESO_PRINCIPAL
-    fin_mientras
-    ejecutar PROCESO_FINAL
+	ejecutar PROCESO_INICIAL
+	mientras NRO_REPUESTO <> 0
+		ejecutar PROCESO_PRINCIPAL
+	fin_mientras
+	ejecutar PROCESO_FINAL
 fin
 
 Rutinas:
 PROCESO_INICIAL:
-    ejecutar IMPRIMIR_PANTALLA_INICIAL
-    ejecutar INICIALIZAR_VARIABLES
-    ejecutar ABRIR_ARCHIVO_REPUESTO
-    ejecutar LEER_SIG_ID
+	ejecutar IMPRIMIR_PANTALLA_INICIAL
+	ejecutar INICIALIZAR_VARIABLES
+	ejecutar ABRIR_ARCHIVO_REPUESTO
+	ejecutar LEER_SIG_ID
 retorno
 
 PROCESO_PRINCIPAL:
-    ejecutar CALCULAR_VENTAS
-    ejecutar LEER_SIG_ID
+	ejecutar CALCULAR_VENTAS
+	ejecutar LEER_SIG_ID
 retorno
 
 PROCESO_FINAL:
-    ejecutar CERRAR_ARCHIVO_REPUESTO
-    imprimir "*** Fin del proceso ***"
+	ejecutar CERRAR_ARCHIVO_REPUESTO
+	imprimir "*** Fin del proceso ***"
 retorno
 
 IMPRIMIR_PANTALLA_INICIAL:
@@ -83,5 +83,5 @@ IMPRIMIR_DATOS
 retorno
 
 CERRAR_ARCHIVO_REPUESTO
-    cerrar REPUESTO
+	cerrar REPUESTO
 retorno

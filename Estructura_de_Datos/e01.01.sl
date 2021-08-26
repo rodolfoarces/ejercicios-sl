@@ -4,40 +4,40 @@ Informe con datos de cajas (B-1, 1.1)
 Entorno:
 	W_ID_ANTERIOR 	es numerico
 	W_DIAGONAL		es numerico
-    archivo CAJAS
-        registro REG_CAJA
-            ID          es numerico
-            ALTO        es numerico
-            ANCHO       es numerico
-            LARGO       es numerico
-        fin_registro
-    prefijo CAJA
+	archivo CAJAS
+		registro REG_CAJA
+			ID          es numerico
+			ALTO        es numerico
+			ANCHO       es numerico
+			LARGO       es numerico
+		fin_registro
+	prefijo CAJA
 
 Cuerpo principal:
 inicio
-    ejecutar PROCESO_INICIAL
-    mientras CAJA_ID <> 0
-        ejecutar PROCESO_PRINCIPAL
-    fin_mientras
-    ejecutar PROCESO_FINAL
+	ejecutar PROCESO_INICIAL
+	mientras CAJA_ID <> 0
+		ejecutar PROCESO_PRINCIPAL
+	fin_mientras
+	ejecutar PROCESO_FINAL
 fin
 
 Rutinas:
 PROCESO_INICIAL:
-    ejecutar IMPRIMIR_PANTALLA_INICIAL
-    ejecutar ABRIR_ARCHIVO_CAJAS
-    ejecutar LEER_SIG_ID
+	ejecutar IMPRIMIR_PANTALLA_INICIAL
+	ejecutar ABRIR_ARCHIVO_CAJAS
+	ejecutar LEER_SIG_ID
 retorno
 
 PROCESO_PRINCIPAL:
-    ejecutar CALCULAR_DIMENSIONES
-    ejecutar IMPRIMIR_DIMENSIONES
-    ejecutar LEER_SIG_ID
+	ejecutar CALCULAR_DIMENSIONES
+	ejecutar IMPRIMIR_DIMENSIONES
+	ejecutar LEER_SIG_ID
 retorno
 
 PROCESO_FINAL:
-    ejecutar CERRAR_ARCHIVO_CAJAS
-    imprimir "*** Fin del proceso ***"
+	ejecutar CERRAR_ARCHIVO_CAJAS
+	imprimir "*** Fin del proceso ***"
 retorno
 
 IMPRIMIR_PANTALLA_INICIAL:
@@ -66,5 +66,5 @@ IMPRIMIR_DIMENSIONES
 retorno
 
 CERRAR_ARCHIVO_CAJAS
-    cerrar CAJAS
+	cerrar CAJAS
 retorno
