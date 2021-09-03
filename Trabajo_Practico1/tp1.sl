@@ -13,6 +13,8 @@ Los datos se deberán ingresar de la siguiente forma:
 * Codigo de sexo (0=Hombre,1=Mujer)
 * Altura (en centimetros)
 
+Mas información en: https://github.com/rodolfoarces/ejercicios-sl/blob/tp01/Trabajo_Practico1/tp1.sl
+
 Objetivo:
 	Calcular altura promedio por grado y sexo.
 
