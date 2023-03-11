@@ -1,5 +1,5 @@
 Objetivo:
-Informe con datos de cajas (B-2, 1.2)
+Informe con datos de cajas (Lógica de Programación Avanzada, Apendice B, 1. Problemas inciales, Ejercicio 1.2, B-2)
 
 Entorno:
 	W_ID_ANTERIOR 	es numerico

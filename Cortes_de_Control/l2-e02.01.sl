@@ -1,5 +1,5 @@
 Objetivo:
-	Informe con datos de cajas (B-4, 2.1)
+	Informe con datos de cajas (Logica de programación avanzanda, Apendice B, 2. Cortes de control, Ejercicio 2.1, B-4)
 
 Entorno:
 	W_ID_ANTERIOR 		es numerico
