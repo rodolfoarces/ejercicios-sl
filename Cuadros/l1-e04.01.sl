@@ -1,5 +1,5 @@
 Objetivo:
-	Resumen de profesionales por departamento (Introducción a la lógica de programación, Apendice B, 4. Cuadros, Ejericio 4.1, l1-4.1)
+	Resumen de profesionales por departamento (Introducción a la lógica de programación, Apendice B, 4. Cuadros, Ejericio 4.1, Pág 121)
 	
 ENTORNO
 	W_NOMBRE 			es alfanumériico
